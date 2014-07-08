@@ -1,0 +1,21 @@
+{
+  "name": "grid",
+  "version": "1.0.0",
+  "authors": [
+    "Ben Schwarz <ben@germanforblack.com>"
+  ],
+  "keywords": [
+    "css",
+    "grid",
+    "flexbox"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ]
+}

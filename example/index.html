@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="grid.css">
+  <style>
+    body {
+      font-family: Helvetica;
+      font-weight: bold;
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+    .box {
+      box-sizing: border-box;
+      padding: 1rem 0;
+      width: 100%;
+      background: #007FFF;
+      text-align: center;
+    }
+
+    .box .box {
+      color: white;
+      background: #036;
+    }
+
+    .box-large { height: 8rem; }
+
+    [ui-grid~="row"],
+    [ui-grid*="column-"] { border: 1px solid black; }
+  </style>
+</head>
+<body>
+  <h2>Columns</h2>
+  <div ui-grid="container">
+    <div ui-grid="row gutters between">
+      <div ui-grid="column-12-hand" class="box"><div class="box">12</div></div>
+      <div ui-grid="column-6-hand" class="box"><div class="box">6</div></div>
+      <div ui-grid="column-6-hand" class="box"><div class="box">6</div></div>
+      <div ui-grid="column-4-hand" class="box"><div class="box">4</div></div>
+      <div ui-grid="column-4-hand" class="box"><div class="box">4</div></div>
+      <div ui-grid="column-4-hand" class="box"><div class="box">4</div></div>
+      <div ui-grid="column-3-hand" class="box"><div class="box">3</div></div>
+      <div ui-grid="column-3-hand" class="box"><div class="box">3</div></div>
+      <div ui-grid="column-3-hand" class="box"><div class="box">3</div></div>
+      <div ui-grid="column-3-hand" class="box"><div class="box">3</div></div>
+      <div ui-grid="column-2-hand" class="box"><div class="box">2</div></div>
+      <div ui-grid="column-2-hand" class="box"><div class="box">2</div></div>
+      <div ui-grid="column-2-hand" class="box"><div class="box">2</div></div>
+      <div ui-grid="column-2-hand" class="box"><div class="box">2</div></div>
+      <div ui-grid="column-2-hand" class="box"><div class="box">2</div></div>
+      <div ui-grid="column-2-hand" class="box"><div class="box">2</div></div>
+
+      <div ui-grid="column-1-hand" class="box"><div class="box">1</div></div>
+      <div ui-grid="column-1-hand" class="box"><div class="box">1</div></div>
+      <div ui-grid="column-1-hand" class="box"><div class="box">1</div></div>
+      <div ui-grid="column-1-hand" class="box"><div class="box">1</div></div>
+      <div ui-grid="column-1-hand" class="box"><div class="box">1</div></div>
+      <div ui-grid="column-1-hand" class="box"><div class="box">1</div></div>
+      <div ui-grid="column-1-hand" class="box"><div class="box">1</div></div>
+      <div ui-grid="column-1-hand" class="box"><div class="box">1</div></div>
+      <div ui-grid="column-1-hand" class="box"><div class="box">1</div></div>
+      <div ui-grid="column-1-hand" class="box"><div class="box">1</div></div>
+      <div ui-grid="column-1-hand" class="box"><div class="box">1</div></div>
+      <div ui-grid="column-1-hand" class="box"><div class="box">1</div></div>
+
+    </div>
+  </div>
+
+  <h2>Auto sizing columns</h2>
+  <div ui-grid="row">
+    <div ui-grid="column-auto" class="box"><div class="box"></div></div>
+    <div ui-grid="column-auto" class="box"><div class="box"></div></div>
+    <div ui-grid="column-auto" class="box"><div class="box"></div></div>
+    <div ui-grid="column-auto" class="box"><div class="box"></div></div>
+    <div ui-grid="column-auto" class="box"><div class="box"></div></div>
+    <div ui-grid="column-auto" class="box"><div class="box"></div></div>
+  </div>
+
+  <div ui-grid="row">
+    <div ui-grid="column-6-hand" class="box"><div class="box"></div></div>
+    <div ui-grid="column-auto" class="box"><div class="box"></div></div>
+    <div ui-grid="column-auto" class="box"><div class="box"></div></div>
+    <div ui-grid="column-auto" class="box"><div class="box"></div></div>
+    <div ui-grid="column-auto" class="box"><div class="box"></div></div>
+    <div ui-grid="column-auto" class="box"><div class="box"></div></div>
+  </div>
+
+  <h2>Gutters</h2>
+  <div ui-grid="row gutters">
+    <div ui-grid="column-3-hand" class="box"><div class="box"></div></div>
+    <div ui-grid="column-3-hand" class="box"><div class="box"></div></div>
+    <div ui-grid="column-3-hand" class="box"><div class="box"></div></div>
+    <div ui-grid="column-3-hand" class="box"><div class="box"></div></div>
+  </div>
+
+  <h2>Alignment</h2>
+  <h3>Top row</h3>
+  <div ui-grid="row gutters top">
+    <div ui-grid="column-4-hand" class="box box-large"><div class="box"></div></div>
+    <div ui-grid="column-4-hand" class="box"><div class="box"></div></div>
+    <div ui-grid="column-4-hand" class="box"><div class="box"></div></div>
+  </div>
+
+  <h3>Middle row</h3>
+  <div ui-grid="row gutters around middle">
+    <div ui-grid="column-4-hand" class="box box-large"><div class="box"></div></div>
+    <div ui-grid="column-4-hand" class="box"><div class="box"></div></div>
+    <div ui-grid="column-4-hand" class="box"><div class="box"></div></div>
+  </div>
+
+  <h3>Bottom row</h3>
+  <div ui-grid="row gutters around bottom">
+    <div ui-grid="column-4-hand" class="box box-large"><div class="box"></div></div>
+    <div ui-grid="column-4-hand" class="box"><div class="box"></div></div>
+    <div ui-grid="column-4-hand" class="box"><div class="box"></div></div>
+  </div>
+
+  <h3>Top column</h3>
+  <div ui-grid="row gutters around">
+    <div ui-grid="column-6-hand" class="box box-large"><div class="box"></div></div>
+    <div ui-grid="column-6-hand top" class="box"><div class="box"></div></div>
+  </div>
+
+  <h3>Middle column</h3>
+  <div ui-grid="row gutters around">
+    <div ui-grid="column-6-hand" class="box box-large"><div class="box"></div></div>
+    <div ui-grid="column-6-hand middle" class="box"><div class="box">1</div></div>
+  </div>
+
+  <h3>Bottom column</h3>
+  <div ui-grid="row gutters around">
+    <div ui-grid="column-6-hand" class="box box-large"><div class="box"></div></div>
+    <div ui-grid="column-6-hand bottom" class="box"><div class="box"></div></div>
+  </div>
+
+
+  <h2>Distribution</h2>
+  <h3>Space around</h3>
+  <div ui-grid="row gutters around">
+    <div ui-grid="column-3-hand" class="box"><div class="box"></div></div>
+    <div ui-grid="column-3-hand" class="box"><div class="box"></div></div>
+    <div ui-grid="column-3-hand" class="box"><div class="box"></div></div>
+  </div>
+
+  <h3>Space between</h3>
+  <div ui-grid="row gutters between">
+    <div ui-grid="column-3-hand" class="box"><div class="box"></div></div>
+    <div ui-grid="column-3-hand" class="box"><div class="box"></div></div>
+    <div ui-grid="column-3-hand" class="box"><div class="box"></div></div>
+  </div>
+
+  <h3>Reverse</h3>
+  <div ui-grid="row gutters between reverse">
+    <div ui-grid="column-3-hand" class="box"><div class="box">1</div></div>
+    <div ui-grid="column-3-hand" class="box"><div class="box">2</div></div>
+    <div ui-grid="column-3-hand" class="box"><div class="box">3</div></div>
+  </div>
+</body>
+</html>

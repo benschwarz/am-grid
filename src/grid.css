@@ -1,0 +1,135 @@
+:root {
+  --gutter: 1rem;
+  --gutter-compensation: -.5rem;
+}
+
+[ui-grid~="container"] {
+  padding: 0 var(--gutter);
+}
+
+[ui-grid~="row"] {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 var(--gutter-compensation);
+}
+
+/* Reverse order */
+[ui-grid~="row"][ui-grid~="reverse"] {
+  flex-direction: row-reverse;
+  flex-wrap: row-reverse;
+}
+
+[ui-grid~="gutters"] [ui-grid*="column-"] {
+  padding-left: calc(var(--gutter) / 2);
+  padding-right: calc(var(--gutter) / 2);
+}
+
+/* Distribution */
+[ui-grid~="around"] { justify-content: space-around; }
+[ui-grid~="between"] { justify-content: space-between; }
+
+/* Alignment per row */
+/* Horizontal */
+[ui-grid~="start"] {
+  justify-content: flex-start;
+  text-align: start;
+}
+[ui-grid~="end"] {
+  justify-content: flex-end;
+  text-align: end;
+}
+[ui-grid~="center"] {
+  justify-content: center;
+  text-align: center;
+}
+
+/* Vertical */
+[ui-grid~="top"] { align-items: flex-start; }
+[ui-grid~="bottom"] { align-items: flex-end; }
+[ui-grid~="middle"] { align-items: center; }
+
+/* Alignment per column */
+/*%align-top { align-self: flex-start; }
+%align-bottom { align-self: flex-end; }
+%align-middle { align-self: center; }
+*/
+[ui-grid*="column-"][ui-grid~="top"] { align-self: flex-start; }
+[ui-grid*="column-"][ui-grid~="bottom"] { align-self: flex-end; }
+[ui-grid*="column-"][ui-grid~="middle"] { align-self: center; }
+
+
+/* Mobile first columns */
+[ui-grid*="column-"] {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+[ui-grid~="column-auto"] {
+  flex-grow: 1;
+  flex-basis: 0%;
+}
+
+[ui-grid~="column-12-hand"] {
+  flex: 0 0 100%;
+  min-width: 100%;
+}
+
+[ui-grid~="column-11-hand"] {
+  flex: 0 0 91.6666%;
+  min-width: 91.6666%;
+}
+
+[ui-grid~="column-10-hand"] {
+  flex: 0 0 83.3333%;
+  min-width: 83.3333%;
+}
+
+[ui-grid~="column-9-hand"] {
+  flex: 0 0 75%;
+  min-width: 75%;
+}
+
+[ui-grid~="column-8-hand"] {
+  flex: 0 0 66.6666%;
+  min-width: 66.6666%;
+}
+
+[ui-grid~="column-7-hand"] {
+  flex: 0 0 58.3333%;
+  min-width: 58.3333%;
+}
+
+[ui-grid~="column-6-hand"] {
+  flex: 0 0 50%;
+  min-width: 50%;
+}
+
+[ui-grid~="column-5-hand"] {
+  flex: 0 0 41.6666%;
+  min-width: 41.6666%;
+}
+
+[ui-grid~="column-4-hand"] {
+  flex: 0 0 33.3333%;
+  min-width: 33.3333%;
+}
+
+[ui-grid~="column-3-hand"] {
+  flex: 0 0 25%;
+  min-width: 25%;
+}
+
+[ui-grid~="column-2-hand"] {
+  flex: 0 0 16.6666%;
+  min-width: 16.6666%;
+}
+
+[ui-grid~="column-1-hand"] {
+  flex: 0 0 8.3333%;
+  min-width: 8.3333%;
+}
