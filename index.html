@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>am-grid demo</title>
+  <link rel="stylesheet" href="grid.css">
+  <style>
+    body {
+      font-family: "Avenir Next", Helvetica;
+      font-weight: bold;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    [demo-Box] {
+      box-sizing: border-box;
+      margin: 1rem 0;
+      padding: 1rem 0;
+      width: 100%;
+      color: white;
+      background: #007FFF;
+      text-align: center;
+      border-radius: 3px;
+    }
+
+    [demo-Box] [demo-Box] {
+      background: #036;
+    }
+
+    [demo-Box~="large"] { height: 8rem; }
+  </style>
+</head>
+<body>
+  <h1>am-Grid</h1>
+  <iframe src="//benschwarz.github.io/bower-badges/embed.html?pkgname=am-grid" width="160" height="32" allowtransparency="true" frameborder="0" scrolling="0"></iframe>
+
+  <h2>Responsive</h2>
+  <div am-Grid-Row="gutters between">
+    <div am-Grid-Col="12 lap:3 desk:2 wide:1"><div demo-Box></div></div>
+    <div am-Grid-Col="12 lap:6 desk:8 wide:10"><div demo-Box></div></div>
+    <div am-Grid-Col="12 lap:3 desk:2 wide:1"><div demo-Box></div></div>
+  </div>
+
+  <h2>12 Columns</h2>
+  <div am-Grid-Row="gutters between">
+    <div am-Grid-Col="12"><div demo-Box>12</div></div>
+    <div am-Grid-Col="6"><div demo-Box>6</div></div>
+    <div am-Grid-Col="6"><div demo-Box>6</div></div>
+    <div am-Grid-Col="4"><div demo-Box>4</div></div>
+    <div am-Grid-Col="4"><div demo-Box>4</div></div>
+    <div am-Grid-Col="4"><div demo-Box>4</div></div>
+    <div am-Grid-Col="3"><div demo-Box>3</div></div>
+    <div am-Grid-Col="3"><div demo-Box>3</div></div>
+    <div am-Grid-Col="3"><div demo-Box>3</div></div>
+    <div am-Grid-Col="3"><div demo-Box>3</div></div>
+    <div am-Grid-Col="2"><div demo-Box>2</div></div>
+    <div am-Grid-Col="2"><div demo-Box>2</div></div>
+    <div am-Grid-Col="2"><div demo-Box>2</div></div>
+    <div am-Grid-Col="2"><div demo-Box>2</div></div>
+    <div am-Grid-Col="2"><div demo-Box>2</div></div>
+    <div am-Grid-Col="2"><div demo-Box>2</div></div>
+
+    <div am-Grid-Col="1"><div demo-Box>1</div></div>
+    <div am-Grid-Col="1"><div demo-Box>1</div></div>
+    <div am-Grid-Col="1"><div demo-Box>1</div></div>
+    <div am-Grid-Col="1"><div demo-Box>1</div></div>
+    <div am-Grid-Col="1"><div demo-Box>1</div></div>
+    <div am-Grid-Col="1"><div demo-Box>1</div></div>
+    <div am-Grid-Col="1"><div demo-Box>1</div></div>
+    <div am-Grid-Col="1"><div demo-Box>1</div></div>
+    <div am-Grid-Col="1"><div demo-Box>1</div></div>
+    <div am-Grid-Col="1"><div demo-Box>1</div></div>
+    <div am-Grid-Col="1"><div demo-Box>1</div></div>
+    <div am-Grid-Col="1"><div demo-Box>1</div></div>
+  </div>
+
+
+  <h2>Auto sizing columns</h2>
+  <div am-Grid-Row="gutters">
+    <div am-Grid-Col><div demo-Box></div></div>
+    <div am-Grid-Col><div demo-Box></div></div>
+    <div am-Grid-Col><div demo-Box></div></div>
+    <div am-Grid-Col><div demo-Box></div></div>
+    <div am-Grid-Col><div demo-Box></div></div>
+    <div am-Grid-Col><div demo-Box></div></div>
+  </div>
+
+  <div am-Grid-Row="gutters">
+    <div am-Grid-Col="6"><div demo-Box></div></div>
+    <div am-Grid-Col><div demo-Box></div></div>
+    <div am-Grid-Col><div demo-Box></div></div>
+    <div am-Grid-Col><div demo-Box></div></div>
+    <div am-Grid-Col><div demo-Box></div></div>
+    <div am-Grid-Col><div demo-Box></div></div>
+  </div>
+
+  <h2>Alignment</h2>
+  <h3>Top row</h3>
+  <div am-Grid-Row="gutters top">
+    <div am-Grid-Col="4"><div demo-Box="large"></div></div>
+    <div am-Grid-Col="4"><div demo-Box></div></div>
+    <div am-Grid-Col="4"><div demo-Box></div></div>
+  </div>
+
+  <h3>Middle row</h3>
+  <div am-Grid-Row="gutters around middle">
+    <div am-Grid-Col="4"><div demo-Box="large"></div></div>
+    <div am-Grid-Col="4"><div demo-Box></div></div>
+    <div am-Grid-Col="4"><div demo-Box></div></div>
+  </div>
+
+  <h3>Bottom row</h3>
+  <div am-Grid-Row="gutters around bottom">
+    <div am-Grid-Col="4"><div demo-Box="large"></div></div>
+    <div am-Grid-Col="4"><div demo-Box></div></div>
+    <div am-Grid-Col="4"><div demo-Box></div></div>
+  </div>
+
+  <h3>Top column</h3>
+  <div am-Grid-Row="gutters around">
+    <div am-Grid-Col="6"><div demo-Box="large"></div></div>
+    <div am-Grid-Col="6 top"><div demo-Box></div></div>
+  </div>
+
+  <h3>Middle column</h3>
+  <div am-Grid-Row="gutters around">
+    <div am-Grid-Col="6"><div demo-Box="large"></div></div>
+    <div am-Grid-Col="6 middle"><div demo-Box></div></div>
+  </div>
+
+  <h3>Bottom column</h3>
+  <div am-Grid-Row="gutters around">
+    <div am-Grid-Col="6"><div demo-Box="large"></div></div>
+    <div am-Grid-Col="6 bottom"><div demo-Box></div></div>
+  </div>
+
+
+  <h2>Distribution</h2>
+  <h3>Space around</h3>
+  <div am-Grid-Row="gutters around">
+    <div am-Grid-Col="3"><div demo-Box></div></div>
+    <div am-Grid-Col="3"><div demo-Box></div></div>
+    <div am-Grid-Col="3"><div demo-Box></div></div>
+  </div>
+
+  <h3>Space between</h3>
+  <div am-Grid-Row="gutters between">
+    <div am-Grid-Col="3"><div demo-Box></div></div>
+    <div am-Grid-Col="3"><div demo-Box></div></div>
+    <div am-Grid-Col="3"><div demo-Box></div></div>
+  </div>
+
+  <h3>Reverse</h3>
+  <div am-Grid-Row="gutters between reverse">
+    <div am-Grid-Col="3"><div demo-Box>1</div></div>
+    <div am-Grid-Col="3"><div demo-Box>2</div></div>
+    <div am-Grid-Col="3"><div demo-Box>3</div></div>
+  </div>
+</body>
+</html>
