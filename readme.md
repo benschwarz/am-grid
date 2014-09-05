@@ -31,7 +31,3 @@ am-grid is built using autoprefixer, which is configured to include css vendor p
     </tr>
   </tbody>
 </table>
-
-### Trying to find a solution to
-* Using `border-box`, flexbox, and gutters on the grid
-* Experimenting with [attribute module](https://amcss.github.io/)
