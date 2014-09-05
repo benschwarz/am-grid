@@ -132,6 +132,10 @@
 
 /* Lap */
 @media (--lap) {
+  /* Distribution */
+  [am-Grid-Row~="lap:around"] { justify-content: space-around; }
+  [am-Grid-Row~="lap:between"] { justify-content: space-between; }
+
   /* Alignment per row */
   /* Horizontal */
   [am-Grid-Row~="lap:start"] {
@@ -224,6 +228,10 @@
 
 /* Desk */
 @media (--desk) {
+  /* Distribution */
+  [am-Grid-Row~="desk:around"] { justify-content: space-around; }
+  [am-Grid-Row~="desk:between"] { justify-content: space-between; }
+
   /* Alignment per row */
   /* Horizontal */
   [am-Grid-Row~="desk:start"] {
@@ -315,6 +323,10 @@
 
 /* Wide */
 @media (--wide) {
+  /* Distribution */
+  [am-Grid-Row~="wide:around"] { justify-content: space-around; }
+  [am-Grid-Row~="wide:between"] { justify-content: space-between; }
+
   /* Alignment per row */
   /* Horizontal */
   [am-Grid-Row~="wide:start"] {

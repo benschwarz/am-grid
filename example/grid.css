@@ -251,6 +251,21 @@
 /* Lap */
 
 @media screen and (min-width: 40em) {
+  /* Distribution */
+
+  [am-Grid-Row~="lap:around"] {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  [am-Grid-Row~="lap:between"] {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
   /* Alignment per row */
 
   /* Horizontal */
@@ -422,6 +437,21 @@
 /* Desk */
 
 @media screen and (min-width: 55em) {
+  /* Distribution */
+
+  [am-Grid-Row~="desk:around"] {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  [am-Grid-Row~="desk:between"] {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
   /* Alignment per row */
 
   /* Horizontal */
@@ -593,6 +623,21 @@
 /* Wide */
 
 @media screen and (min-width: 75em) {
+  /* Distribution */
+
+  [am-Grid-Row~="wide:around"] {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  [am-Grid-Row~="wide:between"] {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
   /* Alignment per row */
 
   /* Horizontal */
