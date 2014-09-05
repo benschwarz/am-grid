@@ -1,4 +1,4 @@
-# Grid
+# am-Grid
 
 This project is:
 
@@ -9,4 +9,4 @@ This project is:
 
 ### Trying to find a solution to
 * Using `border-box`, flexbox, and gutters on the grid (IE has issues)
-* Experimenting with [attribute module] (by @geelen)
+* Experimenting with [attribute module](https://amcss.github.io/)
