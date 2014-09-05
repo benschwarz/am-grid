@@ -9,6 +9,7 @@
     "gulp": "^3.8.5",
     "gulp-connect": "^2.0.5",
     "gulp-csso": "^0.2.9",
+    "gulp-gh-pages": "^0.3.3",
     "gulp-load-plugins": "^0.5.3",
     "gulp-myth": "^0.3.1",
     "gulp-rework": "^0.3.0",

@@ -20,6 +20,11 @@ gulp.task('watch', ['css', 'connect'], function () {
   });
 });
 
+gulp.task('deploy', function () {
+  gulp.src("./example/**/*")
+    .pipe($.ghPages());
+});
+
 gulp.task('connect', function () {
   connect.server({
     root: ['example'],
