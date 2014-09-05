@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Ben Schwarz <ben@germanforblack.com>",
   "license": "MIT",
   "devDependencies": {
@@ -14,8 +11,7 @@
     "gulp-csso": "^0.2.9",
     "gulp-load-plugins": "^0.5.3",
     "gulp-myth": "^0.3.1",
-    "gulp-recess": "^0.3.1",
     "gulp-rework": "^0.3.0",
-    "rework-inherit": "^0.2.2"
+    "rework-custom-media": "^0.1.1",
   }
 }

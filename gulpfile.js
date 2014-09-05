@@ -1,12 +1,12 @@
 var gulp = require('gulp'),
-    inherit = require('rework-inherit'),
+    customMedia = require('rework-custom-media'),
     connect = require('gulp-connect'),
     $ = require('gulp-load-plugins')();
 
 gulp.task('css', function () {
   return gulp.src('src/grid.css')
+    .pipe($.rework(customMedia))
     .pipe($.myth())
-    .pipe($.rework(inherit))
     .pipe(gulp.dest('example'))
     .pipe($.csso())
     .pipe(gulp.dest('dist'));
