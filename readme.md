@@ -31,3 +31,13 @@ am-grid is built using autoprefixer, which is configured to include css vendor p
     </tr>
   </tbody>
 </table>
+
+
+### Made with am
+
+Inspired by all of those that came before. 
+
+* am-css
+* https://github.com/kristoferjoseph/flexboxgrid#inspiration
+* Rework
+* Suit
