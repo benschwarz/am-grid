@@ -2,7 +2,7 @@
 
 This project is:
 
-### Made with flexbox
+## Made with flexbox
 - No weird floats
 - Vertical alignment is trivial
 - Horizontal alignment is trivial
@@ -33,7 +33,7 @@ am-grid is built using autoprefixer, which is configured to include css vendor p
 </table>
 
 
-### Made with am
+## Made with am
 
 Inspired by all of those that came before. 
 
