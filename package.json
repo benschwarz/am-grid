@@ -1,8 +1,7 @@
 {
-  "name": "grid",
+  "name": "am-grid",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "author": "Ben Schwarz <ben@germanforblack.com>",
   "main": "src/grid.css",
   "style": "src/grid.css",
