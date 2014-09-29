@@ -4,6 +4,7 @@
 }
 
 /* Custom media queries: Handheld is default — Mobile first. */
+@custom-media --palm screen and (min-width: 30em);
 @custom-media --lap screen and (min-width: 40em);
 @custom-media --desk screen and (min-width: 55em);
 @custom-media --wide screen and (min-width: 75em);
@@ -130,6 +131,123 @@
 }
 
 
+/* Palm */
+@media (--palm) {
+  /* Distribution */
+  [data-am-Grid-Row~="palm:around"],
+  [am-Grid-Row~="palm:around"] { justify-content: space-around; }
+  [data-am-Grid-Row~="palm:between"],
+  [am-Grid-Row~="palm:between"] { justify-content: space-between; }
+
+  /* Alignment per row */
+  /* Horizontal */
+  [data-am-Grid-Row~="palm:start"],
+  [am-Grid-Row~="palm:start"] {
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  [data-am-Grid-Row~="palm:end"],
+  [am-Grid-Row~="palm:end"] {
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  [data-am-Grid-Row~="palm:center"],
+  [am-Grid-Row~="palm:center"] {
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Vertical */
+  [data-am-Grid-Row~="palm:top"],
+  [am-Grid-Row~="palm:top"] { align-items: flex-start; }
+  [data-am-Grid-Row~="palm:bottom"],
+  [am-Grid-Row~="palm:bottom"] { align-items: flex-end; }
+  [data-am-Grid-Row~="palm:middle"],
+  [am-Grid-Row~="palm:middle"] { align-items: center; }
+
+  /* Alignment per column */
+  [data-am-Grid-Col~="palm:top"],
+  [am-Grid-Col~="palm:top"] { align-self: flex-start; }
+  [data-am-Grid-Col~="palm:bottom"],
+  [am-Grid-Col~="palm:bottom"] { align-self: flex-end; }
+  [data-am-Grid-Col~="palm:middle"],
+  [am-Grid-Col~="palm:middle"] { align-self: center; }
+
+  [data-am-Grid-Col~="palm:12"],
+  [am-Grid-Col~="palm:12"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  [data-am-Grid-Col~="palm:11"],
+  [am-Grid-Col~="palm:11"] {
+    flex: 0 0 91.6666%;
+    max-width: 91.6666%;
+  }
+
+  [data-am-Grid-Col~="palm:10"],
+  [am-Grid-Col~="palm:10"] {
+    flex: 0 0 83.3333%;
+    max-width: 83.3333%;
+  }
+
+  [data-am-Grid-Col~="palm:9"],
+  [am-Grid-Col~="palm:9"] {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  [data-am-Grid-Col~="palm:8"],
+  [am-Grid-Col~="palm:8"] {
+    flex: 0 0 66.6666%;
+    max-width: 66.6666%;
+  }
+
+  [data-am-Grid-Col~="palm:7"],
+  [am-Grid-Col~="palm:7"] {
+    flex: 0 0 58.3333%;
+    max-width: 58.3333%;
+  }
+
+  [data-am-Grid-Col~="palm:6"],
+  [am-Grid-Col~="palm:6"] {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  [data-am-Grid-Col~="palm:5"],
+  [am-Grid-Col~="palm:5"] {
+    flex: 0 0 41.6666%;
+    max-width: 41.6666%;
+  }
+
+  [data-am-Grid-Col~="palm:4"],
+  [am-Grid-Col~="palm:4"] {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  [data-am-Grid-Col~="palm:3"],
+  [am-Grid-Col~="palm:3"] {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  [data-am-Grid-Col~="palm:2"],
+  [am-Grid-Col~="palm:2"] {
+    flex: 0 0 16.6666%;
+    max-width: 16.6666%;
+  }
+
+  [data-am-Grid-Col~="palm:1"],
+  [am-Grid-Col~="palm:1"] {
+    flex: 0 0 8.3333%;
+    max-width: 8.3333%;
+  }
+}
+
 /* Lap */
 @media (--lap) {
   /* Distribution */
@@ -224,8 +342,6 @@
   }
 }
 
-
-
 /* Desk */
 @media (--desk) {
   /* Distribution */
@@ -319,7 +435,6 @@
     max-width: 8.3333%;
   }
 }
-
 
 /* Wide */
 @media (--wide) {
