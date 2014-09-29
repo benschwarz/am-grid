@@ -1,10 +1,20 @@
 {
-  "name": "grid",
+  "name": "am-grid",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Experiemental attribute module grid system",
   "author": "Ben Schwarz <ben@germanforblack.com>",
+  "main": "src/grid.css",
+  "style": "src/grid.css",
+  "files": [
+    "src/grid.css"
+  ],
   "license": "MIT",
+  "keywords": [
+    "css",
+    "grid",
+    "flexbox",
+    "am-css"
+  ],
   "devDependencies": {
     "gulp": "^3.8.5",
     "gulp-connect": "^2.0.5",
