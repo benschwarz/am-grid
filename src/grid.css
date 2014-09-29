@@ -24,7 +24,7 @@
   flex-wrap: row-reverse;
 }
 
-[data-am-Grid-Row~="gutters"] [am-Grid-Col],
+[data-am-Grid-Row~="gutters"] [data-am-Grid-Col],
 [am-Grid-Row~="gutters"] [am-Grid-Col] {
   padding-left: calc(var(--gutter) / 2);
   padding-right: calc(var(--gutter) / 2);
